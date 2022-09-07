@@ -1,0 +1,17 @@
+﻿ @model IEnumerable<SignUpModel>
+ <div class="container">
+     <h3>All user</h3>
+     <div class="row">
+         @foreach(var user in Model)
+        {
+            <div class="col-md-4">
+             <img src="@user.ProfileImageUrl"  style="width:150px;height:auto;border-radius: 120px 20px 120px 20px;"   />
+             <h5>@user.FirstName</h5>
+             <a href="#">Fallow</a>
+
+            </div>
+        }
+
+     </div>
+
+ </div>
